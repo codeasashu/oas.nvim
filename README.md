@@ -14,26 +14,7 @@ This plugin provides support for openapi, such as:
 
 2. Add the following in lazy.vim:
     ```lua
-    -- in lazy.lua
-    require("lazy").setup({
-      --- other settings
-      dev = {
-        ---@type string | fun(plugin: LazyPlugin): string directory where you store your local plugin projects
-        path = "~/code/personal/plugins",
-        ---@type string[] plugins that match these patterns will use your local versions instead of being fetched from GitHub
-        patterns = {}, -- For example {"folke"}
-        fallback = false, -- Fallback to git when local plugin doesn't exist
-      },
-    })
-    
-    --- in plugins/basic.lua
-    
-    {
-            "oas.nvim",
-            dev = true,
-            lazy=false,
-            config = true
-    }
+    { "codeasashu/oas.nvim" }
     ```
 
 
